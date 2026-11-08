@@ -25,6 +25,7 @@ permalink: /blog/
   <form class="subscribe" action="{{ site.newsletter_url }}" method="post">
     <label class="visually-hidden" for="subscribe-email">Email address</label>
     <input id="subscribe-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <input type="hidden" name="l" value="{{ site.newsletter_list }}">
     <button type="submit">Subscribe</button>
   </form>
 </section>

@@ -14,10 +14,10 @@ subscribe_note: >
   A new essay at each new moon, sent to your inbox. No tracking, and
   you can unsubscribe in one click.
 
-# Where the subscribe form posts to. This is a Buttondown embed URL;
-# replace USERNAME with your Buttondown username (or use any provider
-# whose form accepts a POST with an "email" field).
-newsletter_url: https://buttondown.com/api/emails/embed-subscribe/USERNAME
+# Where the subscribe form posts to: the listmonk instance on the droplet.
+# newsletter_list is the UUID of the public list (listmonk admin → Lists).
+newsletter_url: https://list.solivarii.com/subscription/form
+newsletter_list: d66cb111-36d9-4697-bf1f-3170c0fc9c90
 
 about: >                              # About page text (Markdown)
   solivarii is a painter working at the meeting point of tantric

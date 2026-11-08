@@ -35,7 +35,6 @@ Normal Markdown: lists, quotes, tables, code blocks and images all work.
 
 ## Before launch
 
-- Replace `USERNAME` in `newsletter_url` in `_config.yml` with your Buttondown username, or the subscribe form won't work.
 - If you use a custom domain (e.g. solivarii.com), set `url` in `_config.yml` and add the domain under **Settings → Pages**.
 - Replace the eight sample posts.
 
