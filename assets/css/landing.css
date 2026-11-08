@@ -1,0 +1,57 @@
+:root {
+  --bg: #000;
+  --fg: #fff;
+  --muted: #6e6e6e;
+  --field: #8a8a8a;   /* the goat's glyphs */
+  --sans: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 17px/1.5 var(--sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* The ASCII scene fills the viewport behind everything. field.js writes into it. */
+.field {
+  position: fixed;
+  inset: 0;
+  margin: 0;
+  font: 400 10px/12px var(--mono);
+  color: var(--field);
+  white-space: pre;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Name and link sit centred under the head. */
+.seal {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 1rem calc(15vh + env(safe-area-inset-bottom, 0px));
+  text-align: center;
+}
+
+.seal h1 { margin: 0; font-size: inherit; font-weight: 500; }
+
+.links { display: flex; gap: 1.5rem; }
+.links a { color: var(--muted); transition: color 0.2s; }
+.links a:hover, .links a:focus-visible { color: var(--fg); outline: none; }

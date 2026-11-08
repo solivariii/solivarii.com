@@ -1,0 +1,81 @@
+# ───────────────────────────────────────────────
+#  Your details: edit everything in this block.
+# ───────────────────────────────────────────────
+title: solivarii                      # browser tab + landing page
+tagline: Paintings, yantras and notes from a tantric practice.
+description: solivarii writes on tantra and art — yantra and mandala, mantra, the old texts on beauty, and what happens in the studio when practice and painting become the same act.
+
+intro: >                              # opening text on the blog
+  Notes from the studio and the meditation seat: on yantra and mandala,
+  on the old Kashmiri texts about beauty, and on making images that
+  are meant to be used rather than only looked at.
+
+subscribe_note: >
+  A new essay at each new moon, sent to your inbox. No tracking, and
+  you can unsubscribe in one click.
+
+# Where the subscribe form posts to. This is a Buttondown embed URL;
+# replace USERNAME with your Buttondown username (or use any provider
+# whose form accepts a POST with an "email" field).
+newsletter_url: https://buttondown.com/api/emails/embed-subscribe/USERNAME
+
+about: >                              # About page text (Markdown)
+  solivarii is a painter working at the meeting point of tantric
+  practice and contemporary art. The work begins with the geometry of
+  yantra and mandala, drawn by hand with compass and straightedge,
+  and moves outward into large paintings in mineral pigment, gold and
+  lamp black.
+
+
+  The practice behind it is Shaiva and Shakta tantra as it was taught
+  in the old texts: mantra, visualisation and the slow discipline of
+  attention. Not the bookshop version. These essays are where the two
+  halves meet, and where the questions that don't fit on a canvas get
+  worked out.
+
+
+  Originals, prints and commissioned yantras are available by request.
+  Write to the address below and say a little about what you are
+  looking for.
+
+email: hello@solivarii.com
+links:
+  - label: X
+    url: https://x.com/solivarii
+
+# ───────────────────────────────────────────────
+#  Site settings
+# ───────────────────────────────────────────────
+# If the site lives at https://USERNAME.github.io, leave baseurl empty.
+# If it lives at https://USERNAME.github.io/REPO, set baseurl: "/REPO".
+url: ""                               # e.g. https://solivarii.com (GitHub Pages fills this in if left empty)
+baseurl: ""
+
+markdown: kramdown
+
+# Used for X/Twitter share cards.
+twitter:
+  username: solivarii
+  card: summary
+
+permalink: /blog/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+feed:
+  path: feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

@@ -1,0 +1,30 @@
+---
+layout: default
+title: Writing
+permalink: /blog/
+---
+<p class="lede">{{ site.intro }}</p>
+
+<section class="block">
+  <h2 class="visually-hidden">All writing</h2>
+  <ol class="posts">
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %Y' }}</time>
+        <span class="title">{{ post.title }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section class="block">
+  <h2 class="label">Subscribe</h2>
+  {% if site.subscribe_note %}<p class="dim">{{ site.subscribe_note }}</p>{% endif %}
+  <form class="subscribe" action="{{ site.newsletter_url }}" method="post">
+    <label class="visually-hidden" for="subscribe-email">Email address</label>
+    <input id="subscribe-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</section>

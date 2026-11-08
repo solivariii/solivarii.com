@@ -1,0 +1,14 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<div class="prose">{{ site.about | markdownify }}</div>
+
+<section class="block">
+  <h2 class="label">Contact</h2>
+  <ul class="contact">
+    <li><span class="dim">Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    {% for link in site.links %}<li><span class="dim">{{ link.label }}</span><a href="{{ link.url }}">{{ link.url | remove: 'https://' }}</a></li>{% endfor %}
+  </ul>
+</section>

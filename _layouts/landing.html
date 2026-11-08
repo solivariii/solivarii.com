@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html css='landing.css' %}
+</head>
+<body>
+  <pre class="field" id="field" aria-hidden="true"></pre>
+
+  <main class="seal">
+    <h1>{{ site.title }}</h1>
+    <nav class="links" aria-label="Links">
+      <a href="{{ '/blog/' | relative_url }}">read the blog</a>
+    </nav>
+  </main>
+
+  <script src="{{ '/assets/js/field.js' | relative_url }}" defer></script>
+</body>
+</html>

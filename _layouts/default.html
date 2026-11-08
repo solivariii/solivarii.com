@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html css='blog.css' %}
+</head>
+<body>
+  {% if page.layout == 'post' or page.url == '/blog/' %}{% assign here = 'writing' %}{% elsif page.url == '/about/' %}{% assign here = 'about' %}{% endif %}
+  <div class="page">
+    <header class="site-header">
+      <a class="site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav aria-label="Main">
+        <a href="{{ '/blog/' | relative_url }}"{% if here == 'writing' %} aria-current="page"{% endif %}>Writing</a>
+        <a href="{{ '/about/' | relative_url }}"{% if here == 'about' %} aria-current="page"{% endif %}>About</a>
+        {% for link in site.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+      </nav>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      {% for link in site.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+    </footer>
+  </div>
+</body>
+</html>
