@@ -26,6 +26,9 @@ permalink: /blog/
     <label class="visually-hidden" for="subscribe-email">Email address</label>
     <input id="subscribe-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
     <input type="hidden" name="l" value="{{ site.newsletter_list }}">
+    <input type="text" name="nonce" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
     <button type="submit">Subscribe</button>
+    {% if site.newsletter_captcha %}<altcha-widget challengeurl="{{ site.newsletter_captcha }}" floating auto="onsubmit" hidelogo hidefooter></altcha-widget>{% endif %}
   </form>
+  {% if site.newsletter_captcha_js %}<script src="{{ site.newsletter_captcha_js }}" defer></script>{% endif %}
 </section>

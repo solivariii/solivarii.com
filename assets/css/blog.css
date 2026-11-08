@@ -85,6 +85,16 @@ img { display: block; max-width: 100%; height: auto; }
 .subscribe input:focus { outline: none; }
 .subscribe button { flex: none; cursor: pointer; }
 .subscribe button:hover, .subscribe button:focus-visible { color: var(--muted); outline: none; }
+.subscribe { position: relative; }
+.subscribe altcha-widget { position: absolute; }  /* floating mode: keep it out of the flex row */
+altcha-widget {
+  --altcha-color-base: var(--bg);
+  --altcha-color-text: var(--fg);
+  --altcha-color-border: #262626;
+  --altcha-color-border-focus: var(--fg);
+  --altcha-border-radius: 0;
+  font-family: var(--sans);
+}
 
 /* A post */
 

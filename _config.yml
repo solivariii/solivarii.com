@@ -18,6 +18,10 @@ subscribe_note: >
 # newsletter_list is the UUID of the public list (listmonk admin → Lists).
 newsletter_url: https://list.solivarii.com/subscription/form
 newsletter_list: d66cb111-36d9-4697-bf1f-3170c0fc9c90
+# Altcha bot check: a proof-of-work puzzle the visitor's browser solves on submit.
+# No third-party service; challenges come from listmonk itself.
+newsletter_captcha: https://list.solivarii.com/api/public/captcha/altcha
+newsletter_captcha_js: https://list.solivarii.com/public/static/altcha.umd.js
 
 about: >                              # About page text (Markdown)
   solivarii is a painter working at the meeting point of tantric
