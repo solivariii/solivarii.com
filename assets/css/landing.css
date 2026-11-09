@@ -2,7 +2,7 @@
   --bg: #000;
   --fg: #fff;
   --muted: #6e6e6e;
-  --field: #8a8a8a;   /* the goat's glyphs */
+  --field: #8a8a8a;   /* the sphere's glyphs */
   --sans: "Geist", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   color-scheme: dark;
@@ -37,16 +37,17 @@ a { color: inherit; text-decoration: none; }
   pointer-events: none;
 }
 
-/* Name and link sit centred under the head. */
+/* Name and link sit just under the sphere, whose centre and radius are
+   CENTER_Y and RADIUS in field.js. */
 .seal {
   position: fixed;
-  inset: auto 0 0;
+  inset: calc(42% + min(190px, 40vw, 26vh) + 2.5rem) 0 auto;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.35rem;
-  padding: 0 1rem calc(15vh + env(safe-area-inset-bottom, 0px));
+  padding: 0 1rem;
   text-align: center;
 }
 

@@ -2,7 +2,7 @@
 
 A personal site built with Jekyll for GitHub Pages, set in Geist, with Geist Mono for the ASCII animation.
 
-- **`/`** is a landing page: the site name and a link to the blog over a live ASCII rendering of a turning horned goat's head (a Baphomet), drawn by `assets/js/field.js`. The light follows the pointer. Visitors who prefer reduced motion get a single still frame.
+- **`/`** is a landing page: the site name and a link to the blog over a live ASCII rendering of a small, slowly turning sphere of points, drawn by `assets/js/field.js`. Visitors who prefer reduced motion get a single still frame.
 - **`/blog/`** is the blog: a black, single-column reading layout with Writing, About and X in the header. Styles live in `assets/css/blog.css`.
 
 ## Edit your details
