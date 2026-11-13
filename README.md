@@ -35,7 +35,7 @@ Normal Markdown: lists, quotes, tables, code blocks and images all work.
 
 ## Before launch
 
-- If you use a custom domain (e.g. solivarii.com), set `url` in `_config.yml` and add the domain under **Settings → Pages**.
+- If you use a custom domain (e.g. example.com), set `url` in `_config.yml` and add the domain under **Settings → Pages**.
 - Replace the eight sample posts.
 
 ## Publish on GitHub Pages

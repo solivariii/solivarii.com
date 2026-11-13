@@ -40,7 +40,7 @@ about: >                              # About page text (Markdown)
   on one person remembering the steps, write to the address below and
   tell me a little about it.
 
-email: hello@solivarii.com
+email: hello@gunnarbachelor.com
 links:
   - label: X
     url: https://x.com/gunnar_bachelor
@@ -52,7 +52,7 @@ links:
 # ───────────────────────────────────────────────
 # If the site lives at https://USERNAME.github.io, leave baseurl empty.
 # If it lives at https://USERNAME.github.io/REPO, set baseurl: "/REPO".
-url: ""                               # e.g. https://solivarii.com (GitHub Pages fills this in if left empty)
+url: ""                               # e.g. https://example.com (GitHub Pages fills this in if left empty)
 baseurl: ""
 
 markdown: kramdown
