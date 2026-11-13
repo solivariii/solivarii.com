@@ -1,17 +1,17 @@
 # ───────────────────────────────────────────────
 #  Your details: edit everything in this block.
 # ───────────────────────────────────────────────
-title: solivarii                      # browser tab + landing page
-tagline: Paintings, yantras and notes from a tantric practice.
-description: solivarii writes on tantra and art — yantra and mandala, mantra, the old texts on beauty, and what happens in the studio when practice and painting become the same act.
+title: Gunnar Bachelor                # browser tab + landing page
+tagline: IT automation consulting.
+description: Gunnar Bachelor is an IT automation consultant who helps small teams replace repetitive manual work with reliable, documented automation.
 
 intro: >                              # opening text on the blog
-  Notes from the studio and the meditation seat: on yantra and mandala,
-  on the old Kashmiri texts about beauty, and on making images that
-  are meant to be used rather than only looked at.
+  Notes on IT automation: scripting away repetitive work, keeping
+  infrastructure reproducible, and building systems that small teams
+  can run without a dedicated ops department.
 
 subscribe_note: >
-  A new essay at each new moon, sent to your inbox. No tracking, and
+  An occasional email when I publish something new. No tracking, and
   you can unsubscribe in one click.
 
 # Where the subscribe form posts to: the listmonk instance on the droplet.
@@ -24,28 +24,28 @@ newsletter_captcha: https://list.solivarii.com/api/public/captcha/altcha
 newsletter_captcha_js: https://list.solivarii.com/public/static/altcha.umd.js
 
 about: >                              # About page text (Markdown)
-  solivarii is a painter working at the meeting point of tantric
-  practice and contemporary art. The work begins with the geometry of
-  yantra and mandala, drawn by hand with compass and straightedge,
-  and moves outward into large paintings in mineral pigment, gold and
-  lamp black.
+  I'm Gunnar Bachelor, an IT automation consultant. I help small and
+  mid-sized teams take the repetitive, error-prone parts of running
+  IT (provisioning, deployments, backups, user management, routine
+  maintenance) and turn them into automation that runs the same way
+  every time.
 
 
-  The practice behind it is Shaiva and Shakta tantra as it was taught
-  in the old texts: mantra, visualisation and the slow discipline of
-  attention. Not the bookshop version. These essays are where the two
-  halves meet, and where the questions that don't fit on a canvas get
-  worked out.
+  I work hands-on: I read what you have, automate what's worth
+  automating, and leave you with code and documentation your team can
+  own after I'm gone.
 
 
-  Originals, prints and commissioned yantras are available by request.
-  Write to the address below and say a little about what you are
-  looking for.
+  If something in your IT takes too long, breaks too often, or depends
+  on one person remembering the steps, write to the address below and
+  tell me a little about it.
 
 email: hello@solivarii.com
 links:
   - label: X
-    url: https://x.com/solivarii
+    url: https://x.com/gunnar_bachelor
+  - label: GitHub
+    url: https://github.com/gunnar-bachelor
 
 # ───────────────────────────────────────────────
 #  Site settings
@@ -59,7 +59,7 @@ markdown: kramdown
 
 # Used for X/Twitter share cards.
 twitter:
-  username: solivarii
+  username: gunnar_bachelor
   card: summary
 
 permalink: /blog/:title/

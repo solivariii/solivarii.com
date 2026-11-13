@@ -1,4 +1,4 @@
-# solivarii
+# Gunnar Bachelor
 
 A personal site built with Jekyll for GitHub Pages, set in Geist, with Geist Mono for the ASCII animation.
 
